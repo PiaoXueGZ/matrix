@@ -2,7 +2,7 @@ from fractions import Fraction
 from copy import deepcopy
 
 #是否显示过程
-displayProcess = True
+displayProcess = False
 
 class vector(object):
     def __init__(self, T):
@@ -225,7 +225,9 @@ class matrix(object):
 
     
 
-l = [[1, 4, 2], [0, -3, 4], [0, 4, 3]]
+l = [[1, 4, 2], 
+    [0, -3, 4], 
+    [0, 4, 3]]
 m = matrix(l)
 for i in range(8):
     m *= m
